@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.homeSection {
+  width: 100vw;
+  height: 100vh;
+}
+.slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: white;
+  font-size: 2rem;
+  margin-top: -28.12rem;
+  margin-left: 45%;
+
+  width: 40%;
+  padding: 2%;
+}
+.h1 {
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+}
+.h1::before {
+  content: "Welcome";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: deeppink;
+}
+
+.h1:hover {
+  color: deeppink;
+  cursor: pointer;
+}
+.text:hover {
+  color: deeppink;
+  cursor: pointer;
+}
+.getTouchButton {
+  font-size: 1.5rem;
+  background: transparent;
+  margin-left: 46%;
+  border-radius: 30px;
+  border: 1px solid orange;
+  color: white;
+  padding: 1%;
+}
+.getTouchButton:hover {
+  color: white;
+  background-color: orange;
+}
+
+#pricingSection {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: grid;
+  place-items: center;
+
+  position: relative;
+  right: 60%;
+  width: 150%;
+}
+
+/* MediaQuery for pricing section */
+
+/* mediaQuery upto 1024px for mobile */
+
+@media screen and (max-width: 768px) {
+  #pricingSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin: 3rem 0rem;
+  }
+
+  .containerStyles {
+    width: 100%;
+  }
+}
+
+@media screen and(max-width: 780px) {
+  .containerStyles {
+    width: 100%;
+  }
+}
+.containerStyles {
+  width: 100vw;
+  height: 100vh;
+  background-position: bottom;
+  background-size: cover;
+  border: 1px solid green;
+}

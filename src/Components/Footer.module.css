@@ -1,0 +1,98 @@
+
+#footer{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+
+
+.main{
+  background-color:white;
+  width: 90%;
+  height:20rem ;
+  display: flex;
+   justify-content: space-between;
+   /* padding: 4rem 8rem; */
+  
+  
+}
+.main1{
+   display: flex;
+   flex-direction: column;
+   gap: 0.4rem;
+   font-size: 20px;
+  
+}
+.main4{
+  display: flex;
+   flex-direction: column;
+   gap: 0.4rem;
+   font-size: 20px;
+  
+
+
+}
+.form{
+  /* display: none; */
+   display: flex;
+   flex-direction: column;
+   
+   justify-content: space-between;
+   align-items: center;
+   
+}
+a{
+  color: black;
+  margin: 1rem 1rem;
+  /* gap: 1rem; */
+  cursor: pointer;
+}
+
+
+
+/* media querie from 768 to 1024 */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .form{
+    /* display: none; */
+  }
+  .main{
+    width: 100vw;
+  }
+}
+/* media querie from 480 to 767*/
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    width: 100vw;
+  }
+
+
+  
+}
+
+@media screen and  (max-width: 480px) {
+  .main{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    
+    
+    
+  }
+
+
+  
+}
+
